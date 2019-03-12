@@ -51,6 +51,8 @@
 #define HOUR_TO_MS(hr)	(millis_t)((hr)*MS_HOUR)
 #define SEC_TO_MS(sec)	(millis_t)((sec)*MS_SEC)
 
+#define DEBOUNCE		(millis_t)5
+
 //Must Define Board Version Here
 #define VERSION REAL_DEBUGGING_V2
 

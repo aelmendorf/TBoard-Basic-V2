@@ -17,15 +17,18 @@ typedef struct timer_registers{
 	millis_t wait_last;
 	millis_t auto_last;
 	millis_t cycle_last;
+	millis_t debounce_last;
 	millis_t now;
 	static const millis_t wait_timer=WAIT_TIME;
 	static const millis_t cycle_timer=CYCLE_TIME;
 	static const millis_t auto_timer=AUTO_TIME;
+	static const millis_t debounce_timer=DEBOUNCE;
 	
 	inline timer_registers(){
 		this->wait_last=0;
 		this->auto_last=0;
 		this->cycle_last=0;
+		this->debounce_last=0;
 		this->now=0;
 		this->error=false;
 	}
@@ -34,6 +37,7 @@ typedef struct timer_registers{
 		this->wait_last=0;
 		this->auto_last=0;
 		this->cycle_last=this->Now();
+		this->debounce_last=0;
 		this->error=false;
 	}
 	
@@ -50,6 +54,10 @@ typedef struct timer_registers{
 		this->wait_last=Now();
 	}
 	
+	inline void ResetDebound(){
+		this->debounce_last=Now();
+	}
+	
 	inline millis_t Now(){
 		this->now=millis_get();
 		return this->now;
@@ -64,6 +72,10 @@ typedef struct timer_registers{
 	}
 	
 	inline bool DayDone(){
+		return (this->Now()-this->cycle_last)>=cycle_timer;
+	}
+	
+	inline bool DebounceDone(){
 		return (this->Now()-this->cycle_last)>=cycle_timer;
 	}
 	

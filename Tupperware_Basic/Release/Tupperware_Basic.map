@@ -232,7 +232,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x5ac
+.text           0x00000000      0x5bc
  *(.vectors)
  .vectors       0x00000000       0xac C:/Program Files (x86)/Atmel/Studio/7.0/Packs/Atmel/ATmega_DFP/1.2.272/gcc/dev/atmega32u4/avr5/crtatmega32u4.o
                 0x00000000                __vector_default
@@ -360,72 +360,72 @@ END GROUP
                 0x000001ae       0x28 src/Program/BoardController.o
                 0x000001ae                _ZN15timer_registers8ResetDayEv
  .text._ZN15BoardControllerC2Ev
-                0x000001d6       0x3a src/Program/BoardController.o
+                0x000001d6       0x42 src/Program/BoardController.o
                 0x000001d6                _ZN15BoardControllerC1Ev
                 0x000001d6                _ZN15BoardControllerC2Ev
  .text._ZN15BoardController5SetupEv
-                0x00000210       0x40 src/Program/BoardController.o
-                0x00000210                _ZN15BoardController5SetupEv
+                0x00000218       0x40 src/Program/BoardController.o
+                0x00000218                _ZN15BoardController5SetupEv
  .text._ZN15BoardController5StartEv
-                0x00000250       0x40 src/Program/BoardController.o
-                0x00000250                _ZN15BoardController5StartEv
+                0x00000258       0x48 src/Program/BoardController.o
+                0x00000258                _ZN15BoardController5StartEv
  .text._ZN15BoardController8RunUVOffEv
-                0x00000290        0xa src/Program/BoardController.o
-                0x00000290                _ZN15BoardController8RunUVOffEv
+                0x000002a0        0xa src/Program/BoardController.o
+                0x000002a0                _ZN15BoardController8RunUVOffEv
  .text._ZN15BoardController15Transition_WaitE10transition.part.2
-                0x0000029a       0x22 src/Program/BoardController.o
+                0x000002aa       0x22 src/Program/BoardController.o
  .text._ZN15BoardController7RunUVOnEv
-                0x000002bc        0xa src/Program/BoardController.o
-                0x000002bc                _ZN15BoardController7RunUVOnEv
+                0x000002cc        0xa src/Program/BoardController.o
+                0x000002cc                _ZN15BoardController7RunUVOnEv
  .text._ZN15BoardController15Transition_AutoE10transition.part.1
-                0x000002c6       0x36 src/Program/BoardController.o
+                0x000002d6       0x36 src/Program/BoardController.o
  .text._ZN15BoardController15Transition_AutoE10transition
-                0x000002fc       0x32 src/Program/BoardController.o
-                0x000002fc                _ZN15BoardController15Transition_AutoE10transition
+                0x0000030c       0x32 src/Program/BoardController.o
+                0x0000030c                _ZN15BoardController15Transition_AutoE10transition
  .text._ZN15BoardController6RunRedEv
-                0x0000032e        0xa src/Program/BoardController.o
-                0x0000032e                _ZN15BoardController6RunRedEv
+                0x0000033e        0xa src/Program/BoardController.o
+                0x0000033e                _ZN15BoardController6RunRedEv
  .text._ZN15BoardController10Wait_CycleEv
-                0x00000338       0x6e src/Program/BoardController.o
-                0x00000338                _ZN15BoardController10Wait_CycleEv
+                0x00000348       0x6e src/Program/BoardController.o
+                0x00000348                _ZN15BoardController10Wait_CycleEv
  .text._ZN15BoardController9Wait_AutoEv
-                0x000003a6       0x7c src/Program/BoardController.o
-                0x000003a6                _ZN15BoardController9Wait_AutoEv
+                0x000003b6       0x7c src/Program/BoardController.o
+                0x000003b6                _ZN15BoardController9Wait_AutoEv
  .text._ZN15BoardController7Wait_OnEv
-                0x00000422       0x6e src/Program/BoardController.o
-                0x00000422                _ZN15BoardController7Wait_OnEv
+                0x00000432       0x6e src/Program/BoardController.o
+                0x00000432                _ZN15BoardController7Wait_OnEv
  .text._ZN15BoardController3RunEv
-                0x00000490       0x50 src/Program/BoardController.o
-                0x00000490                _ZN15BoardController3RunEv
+                0x000004a0       0x50 src/Program/BoardController.o
+                0x000004a0                _ZN15BoardController3RunEv
  .text._ZN15BoardControllerD2Ev
-                0x000004e0       0x16 src/Program/BoardController.o
-                0x000004e0                _ZN15BoardControllerD2Ev
-                0x000004e0                _ZN15BoardControllerD1Ev
+                0x000004f0       0x16 src/Program/BoardController.o
+                0x000004f0                _ZN15BoardControllerD2Ev
+                0x000004f0                _ZN15BoardControllerD1Ev
  .text._ZN4TaskC2Ev
-                0x000004f6        0x8 src/Tasks/Task.o
-                0x000004f6                _ZN4TaskC2Ev
-                0x000004f6                _ZN4TaskC1Ev
+                0x00000506        0x8 src/Tasks/Task.o
+                0x00000506                _ZN4TaskC2Ev
+                0x00000506                _ZN4TaskC1Ev
  .text._ZN4TaskD2Ev
-                0x000004fe        0x2 src/Tasks/Task.o
-                0x000004fe                _ZN4TaskD2Ev
-                0x000004fe                _ZN4TaskD1Ev
+                0x0000050e        0x2 src/Tasks/Task.o
+                0x0000050e                _ZN4TaskD2Ev
+                0x0000050e                _ZN4TaskD1Ev
  .text.millis_init
-                0x00000500       0x1e src/Timers/millis.o
-                0x00000500                millis_init
+                0x00000510       0x1e src/Timers/millis.o
+                0x00000510                millis_init
  .text.millis_get
-                0x0000051e       0x18 src/Timers/millis.o
-                0x0000051e                millis_get
+                0x0000052e       0x18 src/Timers/millis.o
+                0x0000052e                millis_get
  .text.__vector_17
-                0x00000536       0x4a src/Timers/millis.o
-                0x00000536                __vector_17
+                0x00000546       0x4a src/Timers/millis.o
+                0x00000546                __vector_17
  .text.libgcc.div
-                0x00000580       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x00000580                __udivmodhi4
-                0x000005a8                . = ALIGN (0x2)
+                0x00000590       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000590                __udivmodhi4
+                0x000005b8                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000005a8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000005a8                _exit
-                0x000005a8                exit
+ .fini9         0x000005b8        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000005b8                _exit
+                0x000005b8                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -444,11 +444,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000005a8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000005b8        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000005ac                _etext = .
+                0x000005bc                _etext = .
 
-.data           0x00800100        0x0 load address 0x000005ac
+.data           0x00800100        0x0 load address 0x000005bc
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -468,8 +468,8 @@ END GROUP
                 0x00800100        0x4 src/Timers/millis.o
  *(COMMON)
                 0x00800104                PROVIDE (__bss_end, .)
-                0x000005ac                __data_load_start = LOADADDR (.data)
-                0x000005ac                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000005bc                __data_load_start = LOADADDR (.data)
+                0x000005bc                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800104        0x0
                 [!provide]                PROVIDE (__noinit_start, .)

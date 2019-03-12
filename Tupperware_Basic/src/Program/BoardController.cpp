@@ -44,6 +44,7 @@ void BoardController::Start(){
 	this->time_reg.Init();
 	this->task.state=INIT;
 	this->task.error=false;;
+	
 }
 
 void BoardController::Run(){
