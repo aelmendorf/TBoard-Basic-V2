@@ -43,8 +43,8 @@ void BoardController::Start(){
 	sei();
 	this->time_reg.Init();
 	this->task.state=INIT;
-	this->task.error=false;;
-	
+	this->task.error=false;
+	this->switch_latch=false;
 }
 
 void BoardController::Run(){

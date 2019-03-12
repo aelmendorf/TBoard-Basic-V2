@@ -54,7 +54,7 @@ typedef struct timer_registers{
 		this->wait_last=Now();
 	}
 	
-	inline void ResetDebound(){
+	inline void ResetDebounce(){
 		this->debounce_last=Now();
 	}
 	
@@ -98,6 +98,7 @@ private:
 CurrentDriver currentDriver;
 Task task;
 TIMER_REG time_reg;
+bool switch_latch;
 
 //functions
 public:
