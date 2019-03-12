@@ -9,13 +9,13 @@
 #ifndef __TASK_H__
 #define __TASK_H__
 #include <avr/io.h>
-typedef enum state{RUNNING,IDLE,INIT,WAIT_HOUR,ERROR}STATE;
+typedef enum state{INIT,WAIT_HR,WAIT_DAY,WAIT_AUTO}STATE;
 
 class Task
 {
 //variables
 public:
-	uint8_t latched:1;
+	bool  error;
 	STATE state;
 protected:
 private:

@@ -11,17 +11,17 @@
 // default constructor
 Task::Task()
 {
-	this->latched=0;
+	this->error=false;
 	this->state=INIT;
 } //Task
 
 Task::Task(const Task &c){
-	this->latched=c.latched;
+	this->error=c.error;
 	this->state=c.state;
 }
 
 Task& Task::operator=(const Task &rhs){
-	this->latched=rhs.latched;
+	this->error=rhs.error;
 	this->state=rhs.state;
 	return *this;
 }

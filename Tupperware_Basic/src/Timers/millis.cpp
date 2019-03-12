@@ -78,38 +78,6 @@
 
 	#define SET_TCCRA()	(REG_TCCRA = 0)
 	#define SET_TCCRB()	(REG_TCCRB = _BV(BIT_WGM)|CLOCKSEL)
-
-#elif MILLIS_TIMER == MILLIS_TIMER2
-	#error "Bad MILLIS_TIMER set"
-	// Timer2
-
-	#if F_CPU > 16320000 // 16.32MHz - 32.64MHz
-		#define CLOCKSEL (_BV(CS22)|_BV(CS20))
-		#define PRESCALER 128
-	#elif F_CPU > 8160000 // 8.16MHz - 16.32MHz
-		#define CLOCKSEL (_BV(CS22))
-		#define PRESCALER 64
-	#elif F_CPU > 2040000 // 2.04MHz - 8.16MHz
-		#define CLOCKSEL (_BV(CS21)|_BV(CS20))
-		#define PRESCALER 32
-	#elif F_CPU > 255 // 256Hz - 2.04MHz
-		#define CLOCKSEL (_BV(CS21))
-		#define PRESCALER 8
-	#endif
-
-	#define REG_TCCRA		TCCR2A
-	#define REG_TCCRB		TCCR2B
-	#define REG_TIMSK		TIMSK2
-	#define REG_OCR			OCR2A
-	#define BIT_WGM			WGM21
-	#define BIT_OCIE		OCIE2A
-	#define ISR_VECT		TIMER2_COMPA_vect
-	#define pwr_enable()	power_timer2_enable()
-	#define pwr_disable()	power_timer2_disable()
-
-	#define SET_TCCRA()	(REG_TCCRA = _BV(BIT_WGM))
-	#define SET_TCCRB()	(REG_TCCRB = CLOCKSEL)
-
 #else
 	#error "Bad MILLIS_TIMER set"
 #endif

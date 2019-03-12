@@ -1,6 +1,6 @@
-src/CurrentDriver/CurrentDriver.d src/CurrentDriver/CurrentDriver.o: \
- ../src/CurrentDriver/CurrentDriver.cpp \
- ../src/CurrentDriver/CurrentDriver.h ../src/General/TBoard.h \
+src/Program/BoardController.d src/Program/BoardController.o: \
+ ../src/Program/BoardController.cpp ../src/Program/BoardController.h \
+ ../src/General/TBoard.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
@@ -14,12 +14,13 @@ src/CurrentDriver/CurrentDriver.d src/CurrentDriver/CurrentDriver.o: \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
- ../src/CurrentDriver/CurrentDriver.h ../src/Timers/millis.h \
+ ../src/CurrentDriver/CurrentDriver.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
+ ../src/Timers/millis.h ../src/Tasks/Task.h
 
-../src/CurrentDriver/CurrentDriver.h:
+../src/Program/BoardController.h:
 
 ../src/General/TBoard.h:
 
@@ -51,10 +52,12 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ../src/CurrentDriver/CurrentDriver.h:
 
-../src/Timers/millis.h:
-
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
+
+../src/Timers/millis.h:
+
+../src/Tasks/Task.h:

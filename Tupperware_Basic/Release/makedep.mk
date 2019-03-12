@@ -6,6 +6,8 @@ src\CurrentDriver\CurrentDriver.cpp
 
 src\main.cpp
 
+src\Program\BoardController.cpp
+
 src\Tasks\Task.cpp
 
 src\Timers\millis.cpp

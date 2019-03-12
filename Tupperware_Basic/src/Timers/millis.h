@@ -21,7 +21,6 @@ typedef unsigned long millis_t;
 
 #define MILLIS_TIMER0 0 /**< Use timer0. */
 #define MILLIS_TIMER1 1 /**< Use timer1. */
-#define MILLIS_TIMER2 2 /**< Use timer2. */
 
 #ifndef MILLIS_TIMER
 #define MILLIS_TIMER MILLIS_TIMER1 /**< Which timer to use. */
